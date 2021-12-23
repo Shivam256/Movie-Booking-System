@@ -27,6 +27,7 @@ public class UserLoginController {
 
     private Alert alert = new Alert(Alert.AlertType.NONE);
 
+
     @FXML
     public void register() throws IOException {
 
@@ -74,5 +75,10 @@ public class UserLoginController {
         alert.setHeaderText("INCORRECT CREDENTIALS");
         alert.show();
 
+    }
+
+    @FXML
+    public void goBack() throws IOException {
+        SceneController.launchScene("homepage.fxml");
     }
 }

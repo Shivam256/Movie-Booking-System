@@ -82,7 +82,7 @@ public class MoviePageController {
         for(Theatre theatre:movie.getTheatres()){
             HBox theatreOverview = new HBox();
 
-            theatreOverview.setPrefHeight(43);
+            theatreOverview.setPrefHeight(45);
 //            theatreOverview.setPrefWidth(750);
             theatreOverview.setSpacing(50);
             theatreOverview.setPadding(new Insets(5,10,5,10));
@@ -91,6 +91,7 @@ public class MoviePageController {
             lb7.setTextFill(Color.WHITE);
             lb7.setFont(new Font("Arial", 25));
             lb7.setStyle("-fx-font-weight:600");
+            lb7.setPrefWidth(400);
 
             Button btn = new Button();
             btn.setText("VIEW");

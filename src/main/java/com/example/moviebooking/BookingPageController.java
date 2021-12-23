@@ -1,5 +1,6 @@
 package com.example.moviebooking;
 
+import com.example.moviebooking.datamodels.Booking;
 import com.example.moviebooking.datamodels.Show;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -15,6 +16,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class BookingPageController {
@@ -44,6 +46,9 @@ public class BookingPageController {
 
     @FXML
     private ImageView moviePoster;
+
+    @FXML
+    private Label bookingConfirmLabel;
 
     private Alert alert = new Alert(Alert.AlertType.NONE);
 
@@ -180,13 +185,25 @@ public class BookingPageController {
                 alert.setAlertType(Alert.AlertType.INFORMATION);
                 alert.setHeaderText("YOUR TICKETS HAVE BEEN BOOKED!");
                 alert.show();
+
                 availableNormalSeats.setText("Available normal seats (Rs. " + selectedShow.getNormalSeatsPrice() + "): " + selectedShow.getAvailableNormalSeats() + "/" + selectedShow.getNormalSeats());
                 availablePremiumSeats.setText("Available premium seats(Rs. " + selectedShow.getPremiumSeatsPrice() + "): " + selectedShow.getAvailablePremiumSeats() + "/" + selectedShow.getPremiumSeats());
+
+                Booking booking = new Booking(DB.getCurrentUser(),selectedShow);
+                DB.getCurrentUser().addBooking(booking);
+
+                bookingConfirmLabel.setText("You have booked " + normalSeats + " normal seats and " + premiusSeats + " premium seats for the movie " + selectedShow.getMovie().getName() + " at " + selectedShow.getTime() + " in " + selectedShow.getTheatre().getName());
+
 
                 return;
             }
         }
 
 
+    }
+
+    @FXML
+    public void goBack() throws IOException {
+        SceneController.launchScene("theatrePage.fxml");
     }
 }

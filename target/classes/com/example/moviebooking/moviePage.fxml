@@ -10,7 +10,8 @@
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.moviebooking.MoviePageController" style="-fx-background-color:#121212">
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="0" text="BACK" onAction="#goBack"/>
+<!--    <Button GridPane.columnIndex="0" GridPane.rowIndex="0" text="BACK" onAction="#goBack"/>-->
+    <Button text="BACK" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#goBack" prefWidth="80" prefHeight="30" style="-fx-background-color:#4361EE;-fx-text-fill:white"/>
     <HBox fx:id="movieInfo" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="40">
         <padding>
             <Insets top="20" left="30" right="30" bottom="20"/>

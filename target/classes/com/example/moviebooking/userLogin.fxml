@@ -15,7 +15,8 @@
         <ColumnConstraints percentWidth="50.0"/>
         <ColumnConstraints percentWidth="50.0"/>
     </columnConstraints>
-    <VBox GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="40" >
+    <Button text="BACK" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#goBack" prefWidth="80" prefHeight="30" style="-fx-background-color:#4361EE;-fx-text-fill:white"/>
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="0" spacing="40" >
         <padding>
             <Insets top="40" left="20" right="20" bottom="20"/>
         </padding>
@@ -58,18 +59,18 @@
                 </font>
             </PasswordField>
         </HBox>
-        <Button text="LOG IN" prefWidth="180" prefHeight="40" style="-fx-background-color:#4CC9F0;-fx-text-fill:white" textFill="#2b3035" alignment="CENTER" onAction="#login">
+        <Button text="LOG IN" prefWidth="180" prefHeight="40" style="-fx-background-color:#4CC9F0;-fx-text-fill:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#login">
             <VBox.margin>
                 <Insets left="90"/>
             </VBox.margin>
             <font>
-                <Font size="15"/>
+                <Font name="Arial bold" size="15"/>
             </font>
         </Button>
 
 
     </VBox>
-    <VBox GridPane.rowIndex="0" GridPane.columnIndex="1" spacing="40" >
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="1" spacing="40" >
         <padding>
             <Insets top="40" left="20" right="20" bottom="20"/>
         </padding>
@@ -142,7 +143,7 @@
                 </font>
             </PasswordField>
         </HBox>
-        <Button text="SIGN UP" prefWidth="180" prefHeight="40" style="-fx-background-color:#F72585;-fx-text-fill:white" textFill="#2b3035" alignment="CENTER" onAction="#register">
+        <Button text="SIGN UP" prefWidth="180" prefHeight="40" style="-fx-background-color:#F72585;-fx-text-fill:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#register">
             <VBox.margin>
                 <Insets left="90"/>
             </VBox.margin>

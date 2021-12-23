@@ -1,5 +1,6 @@
 package com.example.moviebooking;
 
+import com.example.moviebooking.datamodels.Booking;
 import com.example.moviebooking.datamodels.Movie;
 import com.example.moviebooking.datamodels.Theatre;
 import javafx.event.ActionEvent;
@@ -29,6 +30,8 @@ public class MainScreenController {
     @FXML
     private HBox itemsContainer;
 
+    @FXML
+    private Label bookingInfoLabel;
 
 
     public void setMoviesInScreen() {
@@ -60,7 +63,7 @@ public class MainScreenController {
             lb2.setStyle("-fx-fontWeight:600");
 
             Button btn = new Button();
-            btn.setText("BOOK");
+            btn.setText("VIEW");
             btn.setPrefWidth(270);
             btn.setPrefHeight(40);
             btn.setStyle("-fx-background-color:#F72585;-fx-font-weight:800;-fx-text-fill:white");
@@ -124,7 +127,7 @@ public class MainScreenController {
             btn.setText("VIEW");
             btn.setPrefWidth(270);
             btn.setPrefHeight(40);
-            btn.setStyle("-fx-background-color:#F72585;-fx-font-weight:800;-fx-text-fill:white");
+            btn.setStyle("-fx-background-color:#4CC9F0;-fx-font-weight:800;-fx-text-fill:white");
 
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -154,6 +157,10 @@ public class MainScreenController {
 
     public void initialize() {
         setMoviesInScreen();
+        if(DB.getCurrentUser().getBookings().size() >0){
+            Booking bk = DB.getCurrentUser().getBookings().get(0);
+            bookingInfoLabel.setText("Booking Id: " + bk.getBookingId() + "  Venue: " + bk.getShow().getTheatre().getName() + "  Movie: " + bk.getShow().getMovie().getName());
+        }
     }
 
     public void handleMoviesClick() {

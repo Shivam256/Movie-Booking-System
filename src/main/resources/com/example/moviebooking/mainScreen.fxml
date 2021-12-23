@@ -7,18 +7,26 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.moviebooking.MainScreenController" alignment="TOP_CENTER" style="-fx-background-color:#121212">
-
-    <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="10" alignment="CENTER">
-        <Button text="MOVIES" prefHeight="40" prefWidth="740" onAction="#handleMoviesClick" style="-fx-background-color:#7209B7;-fx-text-fill:white"/>
-        <Button text="THEATERS" prefHeight="40" prefWidth="740" onAction="#handleTheatresClick" style="-fx-background-color:#3A0CA3;-fx-text-fill:white"/>
+          fx:controller="com.example.moviebooking.MainScreenController" alignment="TOP_CENTER" style="-fx-background-color:#161616">
+    <padding>
+        <Insets top="20" left="10" right="10"/>
+    </padding>
+    <HBox GridPane.rowIndex="1" GridPane.columnIndex="0" spacing="20" alignment="CENTER">
+        <Button text="MOVIES" prefHeight="40" prefWidth="730" onAction="#handleMoviesClick" style="-fx-background-color:#F72585;-fx-text-fill:white"/>
+        <Button text="THEATERS" prefHeight="40" prefWidth="730" onAction="#handleTheatresClick" style="-fx-background-color:#4CC9F0;-fx-text-fill:white"/>
     </HBox>
-    <HBox fx:id="itemsContainer" GridPane.rowIndex="1" GridPane.columnIndex="0" spacing="30" >
+    <HBox fx:id="itemsContainer" GridPane.rowIndex="3" GridPane.columnIndex="0" spacing="30" >
         <padding>
             <Insets top="30" left="30" right="30" bottom="40"/>
         </padding>
     </HBox>
+    <Label fx:id="bookingInfoLabel" GridPane.rowIndex="5" GridPane.columnIndex="0" wrapText="true" textFill="#4CC9F0">
+        <font>
+            <Font name = "Arial bold" size="30"/>
+        </font>
+    </Label>
 </GridPane>
 
