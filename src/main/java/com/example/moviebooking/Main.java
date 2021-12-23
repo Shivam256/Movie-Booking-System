@@ -71,8 +71,8 @@ public class Main extends Application {
         DB.addTheatre(th1);
         DB.addTheatre(th1);
 
-        DB.setCurrentMovie(m1);
-        DB.setCurrentTheatre(th1);
+//        DB.setCurrentMovie(m1);
+//        DB.setCurrentTheatre(th1);
     }
 
 
@@ -91,7 +91,7 @@ public class Main extends Application {
             // setting up the login scene
             seedDB();
 //            DB.setCurrentMovie(new Movie("Pushpa", "https://pbs.twimg.com/media/EVDTqTPU4AA_NaT.jpg", "Action/Thriler", "Based on the smuggling of red sander trees in Seshachalam forest, Andhra Pradesh, Pushpa tells the story of a lorry driver who is part of the illegal business.", 84.0, "2h 59m","Telugu, Malayalam, Tamil, Kannada, Hindi"));
-            root = FXMLLoader.load(getClass().getResource("bookingPage.fxml"));
+            root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
             Main.primaryStage = primaryStage;
             primaryStage.setTitle("Cinema Booking Management System");
 //            primaryStage.initStyle(StageStyle.UNDECORATED);

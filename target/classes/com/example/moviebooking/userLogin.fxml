@@ -10,7 +10,7 @@
 <?import javafx.geometry.Insets?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.moviebooking.UserLoginController" style="-fx-background-color:#2b3035">
+          fx:controller="com.example.moviebooking.UserLoginController" style="-fx-background-color:#161616">
     <columnConstraints>
         <ColumnConstraints percentWidth="50.0"/>
         <ColumnConstraints percentWidth="50.0"/>
@@ -19,7 +19,7 @@
         <padding>
             <Insets top="40" left="20" right="20" bottom="20"/>
         </padding>
-        <Label text="Log in to your account!" textFill="white" style="-fx-font-weight:700" wrapText="true"
+        <Label text="Log in to your account!" textFill="#4CC9F0" style="-fx-font-weight:700" wrapText="true"
                alignment="CENTER" maxWidth="700">
             <font>
                 <Font name="Arial bold" size="40"/>
@@ -58,7 +58,7 @@
                 </font>
             </PasswordField>
         </HBox>
-        <Button text="LOG IN" prefWidth="180" prefHeight="40" style="-fx-background-color:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#login">
+        <Button text="LOG IN" prefWidth="180" prefHeight="40" style="-fx-background-color:#4CC9F0;-fx-text-fill:white" textFill="#2b3035" alignment="CENTER" onAction="#login">
             <VBox.margin>
                 <Insets left="90"/>
             </VBox.margin>
@@ -73,7 +73,7 @@
         <padding>
             <Insets top="40" left="20" right="20" bottom="20"/>
         </padding>
-        <Label text="Create a new account!" textFill="white" style="-fx-font-weight:700" wrapText="true"
+        <Label text="Create a new account!" textFill="#F72585" style="-fx-font-weight:700" wrapText="true"
                alignment="CENTER" maxWidth="700">
             <font>
                 <Font name="Arial bold" size="40"/>
@@ -142,7 +142,7 @@
                 </font>
             </PasswordField>
         </HBox>
-        <Button text="SIGN UP" prefWidth="180" prefHeight="40" style="-fx-background-color:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#register">
+        <Button text="SIGN UP" prefWidth="180" prefHeight="40" style="-fx-background-color:#F72585;-fx-text-fill:white" textFill="#2b3035" alignment="CENTER" onAction="#register">
             <VBox.margin>
                 <Insets left="90"/>
             </VBox.margin>

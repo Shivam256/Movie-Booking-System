@@ -20,8 +20,8 @@ public class Show {
         this.normalSeatsPrice = normalSeatsPrice;
         this.premiumSeats = premiumSeats;
         this.premiumSeatsPrice = premiumSeatsPrice;
-        this.availableNormalSeats = 0;
-        this.availablePremiumSeats = 0;
+        this.availableNormalSeats = normalSeats;
+        this.availablePremiumSeats = premiumSeats;
         this.id = id;
     }
 

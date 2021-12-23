@@ -24,6 +24,7 @@ public class UserLoginController {
     @FXML
     private PasswordField registerConfirm;
 
+
     private Alert alert = new Alert(Alert.AlertType.NONE);
 
     @FXML

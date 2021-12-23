@@ -12,12 +12,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.layout.HBox?>
 <GridPane xmlns:fx="http://javafx.com/fxml"
-          fx:controller="com.example.moviebooking.HelloController" style="-fx-background-color:#121212">
+          fx:controller="com.example.moviebooking.HelloController" style="-fx-background-color:#161616">
     <columnConstraints>
         <ColumnConstraints percentWidth="50.0"/>
         <ColumnConstraints percentWidth="50.0"/>
     </columnConstraints>
-    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" fitHeight="800" fitWidth="750">
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" fitHeight="850" fitWidth="750">
         <Image url="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4e7fb7b-29e1-4057-9fc1-eecfadf9e4c7/de2l3u5-bd984abf-e52d-4e97-9a21-1971ec889647.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0ZTdmYjdiLTI5ZTEtNDA1Ny05ZmMxLWVlY2ZhZGY5ZTRjN1wvZGUybDN1NS1iZDk4NGFiZi1lNTJkLTRlOTctOWEyMS0xOTcxZWM4ODk2NDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RbtMd-fSZXCF79wacR9apSppO20DTvIykd-DJe_N7Rw"/>
     </ImageView>
     <VBox spacing="60" GridPane.rowIndex="0" GridPane.columnIndex="1" alignment="center">
@@ -29,19 +29,22 @@
                 <Font name="Arial bold" size="50"/>
             </font>
         </Label>
-        <HBox alignment="center" spacing="30">
+        <HBox spacing="30">
+            <padding>
+                <Insets left="110"/>
+            </padding>
             <Button text="USER LOGIN" prefWidth="220" prefHeight="60" style="-fx-background-color:#F72585" textFill="white" onAction="#userLoginClicked">
                 <font>
                     <Font size="20"/>
                 </font>
             </Button>
-            <Label textFill="white" text="or"/>
-            <Button text="THEATRE LOGIN" prefWidth="220" prefHeight="60" style="-fx-background-color:#3A0CA3"
-                    textFill="white">
-                <font>
-                    <Font size="20"/>
-                </font>
-            </Button>
+<!--            <Label textFill="white" text="or"/>-->
+<!--            <Button text="THEATRE LOGIN" prefWidth="220" prefHeight="60" style="-fx-background-color:#3A0CA3"-->
+<!--                    textFill="white">-->
+<!--                <font>-->
+<!--                    <Font size="20"/>-->
+<!--                </font>-->
+<!--            </Button>-->
         </HBox>
     </VBox>
 </GridPane>
