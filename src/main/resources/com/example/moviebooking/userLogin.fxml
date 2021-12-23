@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.moviebooking.UserLoginController" style="-fx-background-color:#2b3035">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50.0"/>
+        <ColumnConstraints percentWidth="50.0"/>
+    </columnConstraints>
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="40" >
+        <padding>
+            <Insets top="40" left="20" right="20" bottom="20"/>
+        </padding>
+        <Label text="Log in to your account!" textFill="white" style="-fx-font-weight:700" wrapText="true"
+               alignment="CENTER" maxWidth="700">
+            <font>
+                <Font name="Arial bold" size="40"/>
+            </font>
+            <VBox.margin>
+                <Insets bottom="30" top="60"/>
+            </VBox.margin>
+        </Label>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="username:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <TextField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="loginUsername">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </TextField>
+        </HBox>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="password:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <PasswordField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="loginPassword">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </PasswordField>
+        </HBox>
+        <Button text="LOG IN" prefWidth="180" prefHeight="40" style="-fx-background-color:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#login">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <font>
+                <Font size="15"/>
+            </font>
+        </Button>
+
+
+    </VBox>
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="1" spacing="40" >
+        <padding>
+            <Insets top="40" left="20" right="20" bottom="20"/>
+        </padding>
+        <Label text="Create a new account!" textFill="white" style="-fx-font-weight:700" wrapText="true"
+               alignment="CENTER" maxWidth="700">
+            <font>
+                <Font name="Arial bold" size="40"/>
+            </font>
+            <VBox.margin>
+                <Insets bottom="30" top="60"/>
+            </VBox.margin>
+        </Label>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="username:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <TextField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="registerUsername">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </TextField>
+        </HBox>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="email:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <TextField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="registerEmail">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </TextField>
+        </HBox>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="password:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <PasswordField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="registerPassword">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </PasswordField>
+        </HBox>
+        <HBox spacing="20">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <Label text="confirm:" textFill="white" minWidth="150">
+                <font>
+                    <Font size="25"/>
+                </font>
+            </Label>
+            <PasswordField minWidth="350" minHeight="40" style="-fx-background-color:transparent;-fx-border-color:white;-fx-border-size:2px;-fx-text-fill:white;-fx-border-radius:5px" fx:id="registerConfirm">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </PasswordField>
+        </HBox>
+        <Button text="SIGN UP" prefWidth="180" prefHeight="40" style="-fx-background-color:white;-fx-font-weight:700" textFill="#2b3035" alignment="CENTER" onAction="#register">
+            <VBox.margin>
+                <Insets left="90"/>
+            </VBox.margin>
+            <font>
+                <Font size="15"/>
+            </font>
+        </Button>
+
+
+    </VBox>
+
+</GridPane>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.moviebooking.MoviePageController" style="-fx-background-color:#121212">
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="0" text="BACK" onAction="#goBack"/>
+    <HBox fx:id="movieInfo" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="40">
+        <padding>
+            <Insets top="20" left="30" right="30" bottom="20"/>
+        </padding>
+    </HBox>
+    <ScrollPane prefWidth="1450" prefHeight="300" GridPane.columnIndex="0" GridPane.rowIndex="4" style="-fx-background-color:#121212;-fx-background:#121212">
+
+        <VBox spacing="15" fx:id="theatresSection">
+            <padding>
+                <Insets top="20" left="30" right="30" bottom="20"/>
+            </padding>
+            <Label text="CURRENTLY SCREENING IN:" textFill="white" style="-fx-font-weight:700">
+                <font>
+                    <Font name="Arial bold" size="25"/>
+                </font>
+            </Label>
+
+
+
+
+        </VBox>
+    </ScrollPane>
+</GridPane>
+
+

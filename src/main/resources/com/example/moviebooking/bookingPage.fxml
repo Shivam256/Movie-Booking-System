@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.moviebooking.BookingPageController" style="-fx-background-color:#121212">
+    <padding>
+        <Insets top="20" left="30" right="30" bottom="20"/>
+    </padding>
+    <Label fx:id="bookingHeaderLabel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <VBox spacing="20" GridPane.columnIndex="0" GridPane.rowIndex="3" fx:id="bookingSection">
+        <padding>
+            <Insets top="50" bottom="20"/>
+        </padding>
+        <HBox fx:id="selectShowSection" spacing="30">
+            <Label text="Select Show:" textFill="white" style="-fx-font-weight:700">
+                <font>
+                    <Font name="Arial" size="25"/>
+                </font>
+            </Label>
+
+        </HBox>
+        <Label text="Available normal seats: --" textFill="white" fx:id="availableNormalSeats">
+            <font>
+                <Font name="Arial" size="25"/>
+            </font>
+        </Label>
+        <Label text="Available premium seats: --" textFill="white" fx:id="availablePremiumSeats">
+            <font>
+                <Font name="Arial" size="25"/>
+            </font>
+        </Label>
+        <Label text="Select seats:" textFill="white" style="-fx-font-weight:700">
+            <VBox.margin>
+                <Insets top="50"/>
+            </VBox.margin>
+            <font>
+                <Font name="Arial" size="25"/>
+            </font>
+        </Label>
+        <HBox fx:id="normalSeatsSection" spacing="20">
+            <Label text="Normal: " textFill="white">
+                <font>
+                    <Font name="Arial" size="25"/>
+                </font>
+            </Label>
+        </HBox>
+        <HBox fx:id="premiumSeatsSection" spacing="20">
+            <Label text="Premium:" textFill="white">
+                <font>
+                    <Font name="Arial" size="25"/>
+                </font>
+            </Label>
+        </HBox>
+        <Label text="TOTAL COST: Rs 0" textFill="white">
+            <VBox.margin>
+                <Insets top="50"/>
+            </VBox.margin>
+            <font>
+                <Font name="Arial" size="25"/>
+            </font>
+        </Label>
+
+        <Button text="BOOK" textFill="white"/>
+
+
+    </VBox>
+</GridPane>
+

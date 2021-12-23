@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.moviebooking.MainScreenController" alignment="TOP_CENTER" style="-fx-background-color:#121212">
+
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="10" alignment="CENTER">
+        <Button text="MOVIES" prefHeight="40" prefWidth="740" onAction="#handleMoviesClick" style="-fx-background-color:#7209B7;-fx-text-fill:white"/>
+        <Button text="THEATERS" prefHeight="40" prefWidth="740" onAction="#handleTheatresClick" style="-fx-background-color:#3A0CA3;-fx-text-fill:white"/>
+    </HBox>
+    <HBox fx:id="itemsContainer" GridPane.rowIndex="1" GridPane.columnIndex="0" spacing="30" >
+        <padding>
+            <Insets top="30" left="30" right="30" bottom="40"/>
+        </padding>
+    </HBox>
+</GridPane>
+

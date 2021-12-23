@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.moviebooking.TheatrePageController" style="-fx-background-color:#121212">
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="0" text="BACK" onAction="#goBack"/>
+    <HBox fx:id="theatreInfo" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="40">
+        <padding>
+            <Insets top="20" left="30" right="30" bottom="20"/>
+        </padding>
+    </HBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" text="MOVIES AVAILABLE:" textFill="white"
+           style="-fx-font-weight:700">
+        <padding>
+            <Insets top="10" left="30" right="10" bottom="10"/>
+        </padding>
+        <font>
+            <Font name="Arial bold" size="25"/>
+        </font>
+    </Label>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="6" fx:id="availableMovies" spacing="60">
+        <padding>
+            <Insets top="20" left="30" right="30" bottom="20"/>
+        </padding>
+    </HBox>
+</GridPane>
+
